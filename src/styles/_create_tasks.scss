@@ -1,0 +1,61 @@
+#create-task-area {
+    @include centreSection();
+
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+    background-color: $background-color;
+    border: $thick-border-size solid $primary-color;
+
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
+#input-header {
+    @include flexCentre();
+}
+
+#title-input {
+    @include clearDefaultStyles();
+
+    font-size: $medium-font-size;
+    color: $primary-color;
+
+    &::placeholder {
+        color: $secondary-color;
+        font-weight: lighter;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#description-input {
+    position: absolute;
+    font-size: $small-font-size;
+
+    &::placeholder {
+        color: $secondary-color;
+        font-weight: lighter;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#add-task-button {
+    @include clearDefaultStyles();
+    @include flexItemRight();
+
+    &:hover {
+        color: $accent-color;
+    }
+}
+
+#add-task-icon {
+    font-size: 4rem;
+}

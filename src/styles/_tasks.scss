@@ -1,0 +1,27 @@
+.task {
+    @include centreSection();
+    border: $thin-border-size solid $primary-color;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.task-header {
+    @include flexCentre();
+    font-size: $medium-font-size;
+}
+
+.task-title {
+    text-underline-offset: 1vw;
+}
+
+.task-checkbox {
+    @include flexItemRight();
+
+    font-size: xx-large !important;
+    color: $primary-color;
+}
+
+.task-description {
+    position: absolute;
+    font-size: $small-font-size;
+}

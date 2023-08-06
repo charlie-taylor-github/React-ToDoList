@@ -1,0 +1,22 @@
+@mixin centreSection {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 1.5vw;
+}
+
+@mixin clearDefaultStyles {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+@mixin flexCentre {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexItemRight {
+    margin-left: auto;
+}

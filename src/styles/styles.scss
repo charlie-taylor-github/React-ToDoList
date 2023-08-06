@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap');
+@import "./variables";
+@import "./mixins";
+@import "./create_tasks";
+@import "./tasks";
+
+* {
+    @include clearDefaultStyles();
+}
+
+body {
+    background-color: $background-color;
+}
+
+#header {
+    background-color: $primary-color;
+    padding: 1%;
+}
+
+.title {
+    text-align: center;
+    color: $background-color;
+}
